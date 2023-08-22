@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메이트찾기 게시글 작성</title>
+    <link rel = "stylesheet" href = "mateMatchWrite.css">
+</head>
+<body>
+    <main>
+        <!-- 메이트 찾기 게시글 작성 -->
+        <section class = "mate-write-top">
+            <div class = mate-write-title-box></div>
+            <div class = "mate-write-title-text">메이트 찾기</div>
+            <div class = "mate-wirte-subtitle-text">메이트 찾기 - 글쓰기 </div>
+            <br>
+        </section>
+        <!-- 글쓰기 작성 폼 상세 -->
+        <section class = "mate-write-form">
+            <form class = "mate-write-bigform">
+                <!-- 코드장 이름 -->
+                <div class = "form-court-box distance"> 코트장 이름
+                    <div class = "form-court-text">
+                        <input type = "text" placeholder = "입력해주세요">
+                        <button id = "address-button">주소 찾기</button>
+                    </div>
+                </div>
+                <!-- 날짜 -->
+                <div class = "form-date-box distance">날짜
+                    <div class = "form-date-text">
+                        <input type = "date">
+                    </div>
+                </div>
+                <!-- 시간 -->
+                <div class = "form-time-box distance">
+                    <div class = "form-time-text">시간
+                        <div>
+                            <input type = "text" placeholder="00:00">~
+                            <input type = "text" placeholder="00:00">
+                        </div>
+                    </div>
+                </div>
+                <!-- 구력 -->
+                <div class = "form-oldpower-box distance">
+                    <div class = "form-oldpower-text">구력
+                        <div>
+                            <input type = "text" placeholer = "ex. 1">
+                            <select>
+                                <option value = "선택">==선택==</option>
+                                <option value = "이상">년 이상</option>
+                                <option value = "이하">년 이하</option>
+                                <option value = "전후">년 전후</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- NTRP -->
+                <div class = "form-ntrp-box distance">
+                    <div class = "form-ntrp-text">NTRP(선택)
+                        <div>
+                            <select>
+                                <option value = "선택">==선택==</option>
+                                <option value = "1.0">1.0</option>
+                                <option value = "1.0">1.5</option>
+                                <option value = "1.0">2.0</option>
+                                <option value = "1.0">2.5</option>
+                                <option value = "1.0">3.0</option>
+                                <option value = "1.0">3.5</option>
+                                <option value = "1.0">4.0</option>
+                                <option value = "1.0">4.5</option>
+                                <option value = "1.0">5.0</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- 게임 유형 -->
+                <div class = "form-categori-box distance">
+                    <div class = "form-categori-text">게임 유형
+                        <div>
+                            <select name = "게임 유형">
+                                <option value = "선택">==선택==</option>
+                                <option value = "단식">단식</option>
+                                <option value = "남복">남복</option>
+                                <option value = "여복">여복</option>
+                                <option value = "혼복">혼복</option>
+                                <option value = "랠리">랠리</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- 모집 인원 -->
+                <div class = "form-member-box">
+                    <div class = "form-member-text distance">모집 인원
+                        <div class = "form-member-genderm-text">남
+                            <select class = "member-select" name = "게임 유형">
+                                <option value = "선택">=선택=</option>
+                                <option value = "1">1명</option>
+                                <option value = "2">2명</option>
+                                <option value = "3">3명</option>
+                                <option value = "3">4명</option>
+                                <option value = "3">5명</option>
+                                <option value = "3">6명</option>
+                                <option value = "3">7명</option>
+                                <option value = "3">8명</option>
+                                <option value = "3">9명</option>
+                                <option value = "3">10명</option>
+                            </select>
+                        <div class = "form-member-genderf-text">여
+                            <select class = "member-select" name = "게임 유형">
+                                <option value = "선택">=선택=</option>
+                                <option value = "1">1명</option>
+                                <option value = "2">2명</option>
+                                <option value = "3">3명</option>
+                                <option value = "4">4명</option>
+                                <option value = "5">5명</option>
+                                <option value = "6">6명</option>
+                                <option value = "7">7명</option>
+                                <option value = "8">8명</option>
+                                <option value = "9">9명</option>
+                                <option value = "10">10명</option>
+                            </select>   
+                        </div>
+                    </div>
+                </div>
+                <!-- 코멘트 -->
+                <div class = "form-comment-box distance">
+                    <div class = "form-comment-text">코멘트
+                        <div class = "form-commentbox">
+                            <input id = "comment-box" type = "text" placeholder="코멘트를 입력하세요">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- 뒤로가기, 작성완료 버튼 -->
+        <section class = "mate-write-button">
+            <form class = "form-button">
+                <div>
+                <button class = "mate-detail-form-button1" type="button" 
+                onclick="location.href='../mateMatchList/mateMatchList.html'"><span>뒤로가기</span></button>
+                <button class = "mate-detail-form-button2" type="button" 
+                onclick="location.href='../mateMatchViewDetail/mateMatchViewDetail.html'"><span>작성완료</span></button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+main {
+width: 800px;
+margin: 100px;
+}
+
+/* 메이트 찾기 제목 */
+.mate-write-title-text{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mate-wirte-subtitle-text{
+    font-size: 15px;
+    font-weight: bold;
+    color: lightgrey;
+}
+
+/* 글쓰기 작성 폼 상세 */
+.mate-write-form{
+    background-color: rgb(240, 239, 239);
+    border-radius: 10px;
+    height: 950px;
+}
+
+.mate-write-bigform{
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.distance{
+    padding-bottom: 40px;
+}
+
+#address-button{
+    background-color: white;
+}
+
+.form-member-genderf-text{
+    display: inline;
+}
+
+input{
+    height: 20px;
+}
+
+
+/* 코멘트 */
+.form-commentbox{
+    width: 200px;
+    height: 200px;
+}
+
+#comment-box{
+    width: 700px;
+    height: 250px;
+}
+
+/* 뒤로가기, 작성완료 버튼 */
+button{
+    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+    margin-top: 10px;
+}
+.mate-detail-form-button1{
+    background-color: #e4584b;
+    color: aliceblue;
+    border-color: #e4584b;
+   
+}
+
+.mate-detail-form-button2{
+    float: right;
+    background-color: #18c6ae;
+    color: aliceblue;
+    border-color: #18c6ae;
+}
