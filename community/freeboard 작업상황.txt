@@ -1,0 +1,8 @@
+230822 am 11:51 기준
+freeboard 자유게시판
+freeboardViewDetail만 작성됨
+
+작성필요
+1) Write
+2) WriteEdit
+3) List
