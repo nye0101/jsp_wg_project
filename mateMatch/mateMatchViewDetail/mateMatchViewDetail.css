@@ -1,5 +1,19 @@
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 10;
+    padding: 0;
+    font-family: 'LINESeedKR-Bd';
+    /* border: 1px solid black; */
+  }
+
 main{
-    width: 600px;
+    width: 1000px;
     height: auto;
 }
 body{
@@ -59,10 +73,12 @@ button{
 
 .mate-detail-profile > div{
     display: inline;
+    padding: 3px;
 }
 
-.member-box > div{
+.member-box > div, span{
     display: inline;
+    padding: 5px;
 }
 
 
@@ -75,22 +91,51 @@ button{
 
 .mate-detail-bigform > *{
     margin-left: 3%;
+    margin-right: 3%;
 }
 
 .mate-detail-form{
-    height: 450px;
+    height: 500px;
+}
+
+.mate-detail-form > *{
+    margin-left: 8px;
+}
+
+.gray{
+    color: rgb(140, 140, 140) ;
+}
+
+.comment-bigbox{
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+
+.comment-smallbox{
+    display: flex;
+}
+
+.comment-text{
+    margin-right: 30px; 
 }
 
 .comment-text-box{
-    height: 210px;
-    width: 560px;
+    height: 400px;
+    width: 800px;
     border: 1px solid lightgrey;
     background-color: white;
     padding-top: 10px;
+    height: 285px;  
+    border-radius: 10px;
 }
 
 .commentbox-text{
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    padding: 10px;
+    margin: 10px;
+    height: 400px;
+    width: 800px;
 }
 
 .mate-detail-form > *{
@@ -109,6 +154,7 @@ button{
     padding-left: 5px;
     height: 30px;
     width: 70px;
+    text-align: center;
 }
 
 .mate-detail-form-button2{
@@ -118,6 +164,7 @@ button{
     height: 30px;
     width: 70px;
     float: right;
+    text-align: center;
 }
 
 
@@ -159,6 +206,10 @@ button{
     margin-left: 3%;
 }
 
+.comment2-text{
+    color:rgb(140, 140, 140);
+}
+
 .modify-button-box{
     display: flex;
     justify-content: flex-end;
@@ -170,6 +221,7 @@ button{
 
 .modify-button{
     color: black;
+    width: 50px;
 }
 
 .delete-button-box{
@@ -183,13 +235,14 @@ button{
 
 .delete-button{
     color:#e4584b;
+    width: 50px;
 }
 
 /* 페이징 */
 .page_wrap {
 	text-align:center;
 	font-size:0;
-   padding-top: 10px;
+    padding-top: 10px;
  }
 .page_nation {
 	display:inline-block;
@@ -243,9 +296,10 @@ button{
   }
 
   textarea{
-    width: 470px;
+    width: 800px;
     height: 80px;
     margin-right: 5px;
+    margin-left: 25px;
     margin-top: 10px;
     border-radius: 5px;
   }

@@ -10,6 +10,12 @@ let $currentIdxDisplay = $(".main-banner-currentIdx"); // 현재 인덱스를 �
 let $slideCntDisplay = $(".main-banner-slideCnt"); // 슬라이드 개수를 출력할 요소 선택
 
 // 초기 값 설정 후 출력
+
+
+
+$currentIdxDisplay.text(currentIdx + 1);
+$slideCntDisplay.text(slideCnt);
+
 function checkCnt(){
     $currentIdxDisplay.text(currentIdx + 1); // 인덱스는 0부터 시작하지만 표시는 1부터
     $slideCntDisplay.text(slideCnt);
@@ -340,27 +346,4 @@ xBox.addEventListener('click',function(){
     section5.style.display="none";
 });
 
-//이용약관 모달창으로 불러오기
-$(document).ready(function () {
-    $("#termOfUse2").load("/include/termOfUse2.html", function () {
 
-        
-    });
-})
-
-let termOfUse2= document.querySelector(".main-footer-category-termOfUsetag2");
-let modalTermOfUse2 = document.querySelector(".modal-termOfUse2");
-
-
-termOfUse2.addEventListener('click',function(event){
-    event.preventDefault();
-    modalTermOfUse2.style.display="block";
-    xBox.style.display="block";
-    section5.style.display="flex";
-});
-
-xBox.addEventListener('click',function(){
-    modalTermOfUse2.style.display="none";
-    xBox.style.display="none";
-    section5.style.display="none";
-});

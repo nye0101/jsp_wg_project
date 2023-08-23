@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>마이페이지 회원정보 수정</title>
     <link rel = "stylesheet" href = "mateMatchMyPageMemberEdit.css">
+    <script src = "mateMatchMyPageMemberEdit.js"></script>
 </head>
 <body>
   <main>
     <aside>
         <section  class = "aside-box">
-        <div class = "aside-member-box">
+        <div class = "aside-member-box hover1">
             <div class = "aside-member-text-box">
+                <a href = "../mateMemberEditMyPage/mateMatchMyPageMemberEdit.html">
                 <span class = "aside-member-text white">회원정보 수정</span>
+                </a>
             </div>
         </div>
-        <div class = "aside-matematch-box">
+        <div class = "aside-matematch-box hover1">
           <div class = "aside-matematch-text-box">
+              <a href = "../mateFindMyPage/mateFindMyPage.html">
               <span class = "aside-matematch-text white">메이트 찾기</span>
+              </a>
           </div>
         </div>
-        <div class = "aside-qna-box">
+        <div class = "aside-qna-box hover1">
           <div class = "aside-qna-text-box">
+              <a href = "../mateMatchQnaMyPage/mateMatchQnaMyPage.html">
               <span class = "aside-qna-text white">Q&A</span>
+              </a>
           </div>
         </div>
       </section>
@@ -30,7 +37,14 @@
 
       <!-- 회원정보 수정 -->
       <section class = "accountmodify-form">
+        <form>
+            <div class = "withdraw">
+            <input class = "withdraw-button" type = "button" value = "회원탈퇴" 
+            onclick="withdraw_confirm();" style="cursor:pointer">
+            </div>
+        </form>
         <!-- 아이디 -->
+        <div class = "accountmodify-smallform">
         <div class = "id-box mp">아이디 : 
             <span class = "id-text">wogin</span>
         </div>
@@ -45,18 +59,19 @@
         <!-- 비밀번호 변경 -->
         <div class = "pw-box mp">비밀번호 변경
             <div class = "pw-text-box">
-            <input class = "pwmatch-input" type = "text" placeholder="사용 할 비밀번호를 입력해주세요">
+            <input class = "pwmatch-input" type = "password" placeholder="사용 할 비밀번호를 입력해주세요">
             </div>
         </div>
         <!-- 비밀번호 확인 -->
         <div class = "pwmatch-box mp">비밀번호 확인
             <div class = "pwmatch-text-box">
-            <input class = "pwmatch-input" type = "text" placeholder="입력한 비밀번호를 다시 입력해주세요">
+            <input class = "pwmatch-input" type = "password" placeholder="입력한 비밀번호를 다시 입력해주세요">
+                <p class = "pwmatch-ment-correct-text">※ 비밀번호가 일치합니다</p>
+                <p class = "pwmatch-ment-incorrect-text">※ 비밀번호가 불일치합니다</p>
             </div>
             <!-- 비밀번호 확인 문구 -->
             <div class = "pwmatch-ment-box mp">
-                <span class = "pwmatch-ment-correct-text">※ 비밀번호가 일치합니다</span>
-                <span class = "pwmatch-ment-incorrect-text">※ 비밀번호가 불일치합니다</span>
+                
             </div>
         </div>
         <!-- 이메일 -->
@@ -66,8 +81,8 @@
         <!-- 성별 -->
         <div class = "gender-box mp">성별
             <div class = "gender-button">
-            <input class = "gender-input" type = "button" value = "남자">
-            <input class = "gender-input" type = "button" value = "여자">
+            <input class = "gender-input hover2" type = "button" value = "남자">
+            <input class = "gender-input hover3" type = "button" value = "여자">
             </div>
         </div>
         <!-- 구력 -->
@@ -93,10 +108,12 @@
             </select>
             </div>
         </div>
+    </div>
         <!-- 수정완료 버튼 -->
         <form action = "">
         <div class = "button-box">
-            <input class = "submit-button" type = "button" value = "수정완료">
+            <input class = "submit-button" type = "button" value = "수정완료" 
+            onclick="alert('수정이 완료 되었습니다.');" style="cursor:pointer">
         </div>
         </form>
       </section>

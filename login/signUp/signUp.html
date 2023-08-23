@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
-    <link rel="stylesheet" href="./signUp.css">
+    <link rel="stylesheet" href="signUp.css">
+    <script defer src="signUp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="Area">
@@ -34,21 +36,22 @@
                     <div class="Container2">
                         <span class="Text-Style1">비밀번호</span>
                         <br>
-                        <input class="Input-Style2 Shadow2" type="text" placeholder="   비밀번호를 입력해주세요">
+                        <input class="Input-Style2 Shadow2 Normal" type="password" placeholder="   비밀번호를 입력해주세요" oninput="pwCheck()">
                     </div>
 
                     <!-- 비밀번호 확인 -->
                     <div class="Container2">
                         <span class="Text-Style1">비밀번호 확인</span>
                         <br>
-                        <input class="Input-Style2 Shadow2" type="text" placeholder="   비밀번호를 다시 입력해주세요">
+                        <input class="Input-Style2 Shadow2 Check" type="password" placeholder="   비밀번호를 다시 입력해주세요" oninput="pwCheck()">
+                        <div class="Confirm"></div>
                     </div>
 
                     <!-- 이메일 -->
                     <div class="Container2">
                         <span class="Text-Style1">이메일</span>
                         <br>
-                        <input class="Input-Style2 Shadow2" type="text" placeholder="   이메일을 입력해주세요 ex&#41; hong123@email.net">
+                        <input class="Input-Style2 Shadow2" type="email" placeholder="   이메일을 입력해주세요 ex&#41; hong123@email.net">
                     </div>
 
                     <!-- 이름 -->
@@ -70,7 +73,7 @@
                     <div class="Container2">
                         <span class="Text-Style1">나의 구력</span>
                         <br>
-                        <input class="Input-Style3 Shadow2" type="text" placeholder="   ex&#41; 3">
+                        <input class="Input-Style3 Shadow2" type="text" placeholder="ex&#41; 3">
                         <span class="Text-Style1">년</span>
                     </div>
 
@@ -109,8 +112,8 @@
                     </div>
 
                     <!-- 회원가입 완료 -->
-                    <button  type="button" onclick="location.href='/mainPage/mainPage.html'"  class="SignUpDone-Container Shadow1">
-                        <span class="Text-Style1">회원가입 완료</span>
+                    <button type="button" onclick="location.href='../../login/signIn/signIn.html'" class="SignUpDone-Container Shadow1">
+                        <span class="Text-Style1" >회원가입 완료</span>
                     </button>
                 </form>
             </div>

@@ -19,7 +19,7 @@
         <!-- 모집 완료 버튼 -->
         <section class = "mate-detail-button2">
             <form class="form-button2">
-                <button class = "mate-detail-form-button3">
+                <button type = "button" class = "mate-detail-form-button3" onclick="location.href='../mateMatchList/mateMatchList.html'">
                     <span class = mate-detail-form-button-text>모집완료</span>
                 </button>
                 <span class = "mate-detail-form-button-text2">※ 모집 완료 클릭 시 되돌릴 수 없습니다</span>
@@ -67,23 +67,28 @@
                                 <span class = "member-box-genger-f-text">2</span>
                             </div>
                     </div>
-                    <div class = "comment-box">
-                        <div class = "comment-text">내용
+                    <div class = "comment-bigbox">
+                        <div class = "comment-smallbox">
+                            <div class = "comment-text">내용</div>
+
                             <div class = "comment-text-box">
                                 <span class = "commentbox-text">함께 즐기실 분들 환영입니다!</span>
                             </div>
-                        </div>   
+                        </div> 
+                    </div>
                     </div>
             </section>
         </section>
-        <!-- 삭제 버튼 -->
+        <!-- 삭제, 수정 버튼 -->
         <section class = "mate-detail-button">
-            <a class = "form-button" href="../mateMatchList/mateMatchList.html">
-            <button class = "mate-detail-form-button1"><span>삭제</span></button>
-            </a>
-            <a class = "form-button" href="../mateMatchEdit/mateMatchEdit.html">
-            <button class = "mate-detail-form-button2"><span>수정</span></button>
-            </a>
+            <form class = "form-button">
+                <button type = "button" class = "mate-detail-form-button1"
+                onclick="location.href='../mateMatchList/mateMatchList.html'"><span>삭제</span></button>
+            </form>
+            <form class = "form-button"> <!-- 링크 연결 안 됨 -->
+                <button type = "button" class = "mate-detail-form-button2" 
+                onclick="location.href='../mateMatchEdit/mateMatchEdit.html'"><span>수정</span></button>
+            </form>
         </section>
         <br>            
         <!-- 댓글 섹션 -->
@@ -105,10 +110,10 @@
                     <span class = "comment2-list-text">hong@123.com으로 연락주세요</span>
                 </div>
                 <div class = "modify-button-box">
-                    <button class = "modify-button">수정</button>
+                    <button class = "delete-button">삭제</button>
                 </div>
                 <div class = "delete-button-box">
-                    <button class = "delete-button">삭제</button>
+                    <button class = "modify-button">수정</button>
                 </div>
                 <br><hr>
 
@@ -119,10 +124,10 @@
                     <span class = "comment2-list-text">hong@123.com으로 연락주세요</span>
                 </div>
                 <div class = "modify-button-box">
-                    <button class = "modify-button">수정</button>
+                    <button class = "delete-button">삭제</button>
                 </div>
                 <div class = "delete-button-box">
-                    <button class = "delete-button">삭제</button>
+                    <button class = "modify-button">수정</button>
                 </div>
                 <br><hr>
 
@@ -133,10 +138,10 @@
                     <span class = "comment2-list-text">hong@123.com으로 연락주세요</span>
                 </div>
                 <div class = "modify-button-box">
-                    <button class = "modify-button">수정</button>
+                    <button class = "delete-button">삭제</button>
                 </div>
                 <div class = "delete-button-box">
-                    <button class = "delete-button">삭제</button>
+                    <button class = "modify-button">수정</button>
                 </div>
             </div>
             <hr>

@@ -93,15 +93,10 @@ align-items: center;
   justify-content: center;
   align-items: center;
 }
-.pageback:hover {
-  background-color: #00a18d ;
-}
+
 .complete {
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.complete:hover {
-  background-color: crimson;
 }
