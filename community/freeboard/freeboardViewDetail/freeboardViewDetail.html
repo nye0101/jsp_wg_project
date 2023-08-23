@@ -15,10 +15,13 @@
     <div class="Area">
 
         <!-- 위쪽 컨테이너 -->
-        <section class="MainText-Container">
-           <h2>커뮤니티</h2>
-           <br>
-          <h3>자유게시판</h3>
+<!-- 메이트 찾기 상세페이지 창 --> 
+        <section class = "MainText-Container">
+            <div class = "MainText-Style">
+                <h1>커뮤니티</h1>
+                <br>
+                <h3 class="Text-Color-Gray2">자유게시판 - 상세페이지</h3>
+            </div>
         </section>
         <section class="Up-Container">
             <form action="" method="get">
@@ -49,10 +52,10 @@
                         <div class="Comment-OuterContainer">
                             <div class="Comment-InnerContainer">
                                 <div>
-                                    <span class="Text-Color-Gray">내용</span>
+                                    <span class="Text-Color-Gray">본문</span>
                                 </div>
                                 <div class="Text-Style1 Input-Style2 content-Size1">
-                                    <span class="content-text content-box">가입인사 박습니다
+                                    <span class="content-box">안녕하세요~ 입문자도 소통할 수 있는 공간이 있어 행복해요~!
                                     </span>
                                 </div>
                             </div>
@@ -62,12 +65,10 @@
                 <!-- 삭제, 수정 버튼 -->
                 <div class="Button-OuterContainer1">
                     <div class="Button-InnerContainer1">
-                        <button class="Delete1 Shadow" type="button" 
-                        onclick="location.href='../freeboardList/freeboardList.html'">
+                        <button class="Delete1 Shadow" type="button" onclick="location.href='../freeboardList/freeboardList.html'">
                             <span>삭제</span>
                         </button>
-                        <button class="Edit1 Shadow" type="button" 
-                        onclick="location.href='../freeboardEdit/freeboardEdit.html'">
+                        <button class="Edit1 Shadow"  type="button" onclick="location.href='../freeboardEdit/freeboardEdit.html'">
                             <span>수정</span>
                         </button>
                     </div>
@@ -78,15 +79,20 @@
         <!-- 아래쪽 컨테이너 -->
         <section class="Down-Container Shadow">
             <!-- 조회수, 댓글 아이콘 -->
-            <div class="Icon-OuterContainer">
-                <div class="Icon-InnerContainer">
-                    <div class="Icon-Margin">
-                        <img class="Icon-Size1" src="img/View.png" alt="조회수">
-                        <div class="Font-Size">112</div>
+            <div class="TextIcon-OuterContainer">
+                <div class="TextIcon-InnerContainer">
+                    <div class="Text-Align">
+                        <span>댓글</span>
                     </div>
-                    <div class="Icon-Margin">
-                        <img class="Icon-Size2" src="img/Review.png" alt="댓글수">
-                        <div class="Font-Size Font-Size2">12</div>
+                    <div class="Icon-Align">
+                        <div class="Icon-Margin1">
+                            <img class="Icon-Size1" src="./img/View.png" alt="조회수">
+                            <span class="Font-Size">112</span>
+                        </div>
+                        <div class="Icon-Margin2">
+                            <img class="Icon-Size2" src="./img/Review.png" alt="댓글수">
+                            <span class="Font-Size">12</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -101,8 +107,8 @@
                                 <span class="Text-Style1">테니스 용품 구해요!</span>
                             </div>
                             <div>
-                                <button class="Edit2">수정</button>
-                                <button class="Delete2">삭제</button>
+                                <button class="Edit2 Shadow">수정</button>
+                                <button class="Delete2 Shadow">삭제</button>
                             </div>
                         </div>
                         <hr>
@@ -112,8 +118,8 @@
                                 <span class="Text-Style1">스포츠용품 어디가 좋은가요?</span>
                             </div>
                             <div>
-                                <button class="Edit2">수정</button>
-                                <button class="Delete2">삭제</button>
+                                <button class="Edit2 Shadow">수정</button>
+                                <button class="Delete2 Shadow">삭제</button>
                             </div>      
                         </div>
                         <hr>
@@ -123,8 +129,8 @@
                                 <span class="Text-Style1">나이키 제품 어떠신가요?</span>
                             </div>
                             <div>
-                                <button class="Edit2">수정</button>
-                                <button class="Delete2">삭제</button>
+                                <button class="Edit2 Shadow">수정</button>
+                                <button class="Delete2 Shadow">삭제</button>
                             </div>
                         </div>
                         <hr>
@@ -134,8 +140,8 @@
                                 <span class="Text-Style1">어디서 구매하나요?</span>
                             </div>
                             <div>
-                                <button class="Edit2">수정</button>
-                                <button class="Delete2">삭제</button>
+                                <button class="Edit2 Shadow">수정</button>
+                                <button class="Delete2 Shadow">삭제</button>
                             </div>  
                         </div>
                         <hr>
@@ -145,8 +151,8 @@
                                 <span class="Text-Style1">그것도 좋네요</span>
                             </div>
                             <div>
-                                <button class="Edit2">수정</button>
-                                <button class="Delete2">삭제</button>
+                                <button class="Edit2 Shadow">수정</button>
+                                <button class="Delete2 Shadow">삭제</button>
                             </div>
                         </div>
                         <hr>
@@ -156,19 +162,19 @@
                                 <span class="Text-Style1">좋아요</span>
                             </div>
                             <div>
-                                <button class="Edit2">수정</button>
-                                <button class="Delete2">삭제</button>
+                                <button class="Edit2 Shadow">수정</button>
+                                <button class="Delete2 Shadow">삭제</button>
                             </div>  
                         </div>
                         <hr>
                         <div class="Review-Align">
                             <div>
                                 <span class="Text-Color-Gray">임재준</span>
-                                <span class="Text-Style1">네</span>
+                                <span class="Text-Style1">네?</span>
                             </div>
                             <div>
-                                <button class="Edit2">수정</button>
-                                <button class="Delete2">삭제</button>
+                                <button class="Edit2 Shadow">수정</button>
+                                <button class="Delete2 Shadow">삭제</button>
                             </div>
                         </div>
                         <hr>

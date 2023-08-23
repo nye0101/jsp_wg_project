@@ -21,7 +21,10 @@
                 <!-- 코드장 이름 -->
                 <div class = "form-court-box distance"> 코트장 이름
                     <div class = "form-court-text">
-                        <input type = "text" placeholder = "입력해주세요">
+                        <input id = "court-text-box" type = "text" placeholder = "코트장 명을 입력해주세요">
+                    </div>
+                    <div>
+                        <input id = "address-text-box" type = "text" placeholder = "테니스장 주소">
                         <button id = "address-button">주소 찾기</button>
                     </div>
                 <!-- 날짜 -->
@@ -126,21 +129,17 @@
                 <div class = "form-comment-box distance">
                     <div class = "form-comment-text">코멘트
                         <div class = "form-commentbox">
-                            <input id = "comment-box" type = "text" value="같이 가볍게 쳐봐요" placeholder="코멘트를 입력하세요">
+                            <input id = "comment-box" type = "text" placeholder="코멘트를 입력하세요">
                         </div>
                     </div>
                 </div>
             </form>
         </section>
-        
-        <!-- 뒤로가기, 작성완료 버튼 -->
+        <!-- 삭제, 작성완료 버튼 -->
         <section class = "mate-write-button">
             <form class = "form-button">
-                
-                <button class = "mate-detail-form-button1" type="button" 
-                onclick="location.href='../mateMatchViewDetail/mateMatchViewDetail.html'"><span>뒤로가기</span></button>
-                <button class = "mate-detail-form-button2" type="button" 
-                onclick="location.href='../mateMatchViewDetail/mateMatchViewDetail.html'"><span>작성완료</span></button>
+                <button type="button" class = "mate-detail-form-button1" onclick="location.href='../mateMatchViewDetail/mateMatchViewDetail.html'"><span>뒤로가기</span></button>
+                <button type="button" class = "mate-detail-form-button2" onclick="location.href='../mateMatchViewDetail/mateMatchViewDetail.html'"><span>작성완료</span></button>
             </form>
         </section>
     </main>

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>회원 관리</title>
     <link rel="stylesheet" href="admin_member.css" />
+    <script defer src="admin_member.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="container">
@@ -12,7 +14,7 @@
       <aside>
         <div class="aside-spacing"></div>
         <section class="member">
-          <a class="member-a" href="../admin_member/admin_member.html">
+          <a class="member-a" href="./admin_member.html">
             <div class="member-text">회원관리</div>
           </a>
         </section>
@@ -32,7 +34,7 @@
           </a>
         </section>
         <section class="board-notification">
-          <a class="board-notification-a" href="../admin_notice/admin_noticeList/admin_noticeList.html">
+          <a class="board-notification-a" href="../admin_notice/admin_noticeList/">
             <div class="board-notification-text">공지사항 관리</div>
           </a>
         </section>
@@ -55,6 +57,7 @@
             <select class="search-dropdown" name="" id="">
               <option value="NAME">이름</option>
               <option value="ID">아이디</option>
+              <option value="NICKNAME">닉네임</option>
             </select>
             <input class="search-bar" type="text">
             <button class="search-button" type="submit" >검색</button>
@@ -91,7 +94,7 @@
             <div class="ntrp">1.0</div>
             <div class="join-date">23.02.10</div>
             <div class="execute">
-                <button>회원탈퇴</button>
+                <button class="execute-button" onclick="confirmOut()">회원탈퇴</button>
             </div>
           </div>
           <!-- 회원목록 데이터값 -->
@@ -106,7 +109,7 @@
             <div class="ntrp">1.0</div>
             <div class="join-date">23.02.10</div>
             <div class="execute">
-                <button>회원탈퇴</button>
+                <button class="execute-button" onclick="confirmOut()">회원탈퇴</button>
             </div>
           </div>
           <!-- 회원목록 데이터값 -->
@@ -121,7 +124,7 @@
             <div class="ntrp">1.0</div>
             <div class="join-date">23.02.10</div>
             <div class="execute">
-                <button>회원탈퇴</button>
+                <button class="execute-button" onclick="confirmOut()">회원탈퇴</button>
             </div>
           </div>
           <!-- 회원목록 데이터값 -->
@@ -136,7 +139,7 @@
             <div class="ntrp">1.0</div>
             <div class="join-date">23.02.10</div>
             <div class="execute">
-                <button>회원탈퇴</button>
+                <button class="execute-button" onclick="confirmOut()">회원탈퇴</button>
             </div>
           </div>
           <!-- 회원목록 데이터값 -->
@@ -151,7 +154,7 @@
             <div class="ntrp">1.0</div>
             <div class="join-date">23.02.10</div>
             <div class="execute">
-                <button>회원탈퇴</button>
+                <button class="execute-button" onclick="confirmOut()">회원탈퇴</button>
             </div>
           </div>
           <!-- 회원목록 데이터값 -->
@@ -166,7 +169,7 @@
             <div class="ntrp">1.0</div>
             <div class="join-date">23.02.10</div>
             <div class="execute">
-                <button>회원탈퇴</button>
+                <button class="execute-button" onclick="confirmOut()">회원탈퇴</button>
             </div>
           </div>
           <!-- 회원목록 데이터값 -->
@@ -181,7 +184,7 @@
             <div class="ntrp">1.0</div>
             <div class="join-date">23.02.10</div>
             <div class="execute">
-                <button>회원탈퇴</button>
+                <button class="execute-button" onclick="confirmOut()">회원탈퇴</button>
             </div>
           </div>
           <!-- 회원목록 데이터값 -->
@@ -196,7 +199,7 @@
             <div class="ntrp">1.0</div>
             <div class="join-date">23.02.10</div>
             <div class="execute">
-                <button>회원탈퇴</button>
+                <button class="execute-button" onclick="confirmOut()">회원탈퇴</button>
             </div>
           </div>
           <!-- 회원목록 데이터값 -->
@@ -211,7 +214,7 @@
             <div class="ntrp">1.0</div>
             <div class="join-date">23.02.10</div>
             <div class="execute">
-                <button>회원탈퇴</button>
+                <button class="execute-button" onclick="confirmOut()">회원탈퇴</button>
             </div>
           </div>
           <!-- 회원목록 데이터값 -->
@@ -226,7 +229,7 @@
             <div class="ntrp">1.0</div>
             <div class="join-date">23.02.10</div>
             <div class="execute">
-                <button>회원탈퇴</button>
+                <button class="execute-button" onclick="confirmOut()">회원탈퇴</button>
             </div>
           </div>
 

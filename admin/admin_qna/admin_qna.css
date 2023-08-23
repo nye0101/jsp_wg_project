@@ -89,6 +89,7 @@ main {
   height: 100px;
   display: flex;
   justify-content: center;
+  margin-bottom: -2%;
 }
 .search-form {
   width: 90%;

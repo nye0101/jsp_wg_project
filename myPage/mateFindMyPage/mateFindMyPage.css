@@ -1,168 +1,185 @@
-@font-face {
-  font-family: 'LINESeedKR-Bd';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
+ @font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
 }
+
 * {
-font-family: 'LINESeedKR-Bd';
-margin: 0;
-padding: 0;
+    margin: 10;
+    padding: 0;
+    font-family: 'LINESeedKR-Bd';
+    /* border: 1px solid black; */
 }
 
-/* 전체컨테이너 */
-.container {
-  width: 1000px;
-  height: 1340px;
-  display: flex;
-  margin: auto;
+body {
+display: flex;
+justify-content:  center;
+align-items: center;
 }
 
-/* 좌측 어사이드 */
-aside {
-  height: 100%;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-aside section {
-  width: 170px;
-  height: 50px;
-  margin-top: 40px;
-  background-color: #00c7ae;
-  border-radius: 6px;
-}
-
-aside section:hover {
-  background-color: #00a18d;
-}
-
-aside a {
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-aside div {
-  font-weight: bold;
-  font-size: 17px;
-  color: white;
-}
-
-.aside-spacing {
-  width: 100%;
-  height: 225px;
-  margin-top: 40px;
-  background-color: white;
-}
-
-.board-mate {
-  background-color: #00a18d;
-}
-
-/* 우측 게시글 목록 창 */
 main {
-  height: 100%;
-  width: 75%;
+  width: 1000px;
+  height: 800px;
+  display: flex;
+  background-color: rgb(214, 247, 255);
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+/* 어사이드 */
+.hover1:hover {
+  border: 2px solid #00a18d;
+  background-color: #00a18d;
+}
+
+aside{
+  width: 20%;
+}
+
+.aside-box{
+  width: 100%;
   display: flex;
   flex-direction: column;
-}
+  color: white;
+  
+} 
 
-/*  메이트찾기 & 글쓰기 창 */
-.section-top {
-  width: 100%;
-  height: 200px;
-  display: flex;
-}
-
-/* 카테고리명 - 메이트찾기 */
-.section-top-category-name {
-  height: 100%;
-  width: 300px;
-  display: flex;
-  align-items: center;
-
-}
-
-.section-top-category-name-text {
-  font-weight: bold;
-  font-size: 28px;
-}
-
-/* 검색바 */
-.section-search {
-  width: 100%;
-  height: 100px;
+.aside-member-box{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  background-color:#18c6ae;
+  border-radius: 5px;
+  height: 35px;
 }
 
-.search-form {
-  width: 90%;
-  height: 50%;
+.aside-matematch-box{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background-color: #00a18d;
+  height: 35px;
 }
 
-.search-inner {
-  width: 100%;
-  height: 100%;
+.aside-qna-box{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #18c6ae;
+  height: 35px;
 }
 
-.search-date {
-  width: 15%;
-  height: 95%;
-  border: 1px #00c7ae solid;
-  border-radius: 6px;
+.accountmodify-form{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 800px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.mp{
+  margin-bottom: 20px;
+  padding-left: 200px;
+}
+
+
+/* 회원탈퇴 버튼 */
+
+.withdraw-button{
+  display: flex;
+  justify-content: center;
+  float: right;
+  width: 65px;
+  height: 25px;
+  margin: 7px;
+  background-color: #e4584b;
+  border: 1px solid #e4584b;
+  border-radius: 5px;
+  color: white;
+  font-size: 11px;
+}
+
+/* 회원정보 */
+.id-box{
+  margin-top: 10px;
+}
+
+.pwmatch-input{
+  width: 250px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.pwmatch-ment-correct-text{
+  /* display: none; */
+}
+
+.pwmatch-ment-incorrect-text{
+  /* display: none; */
+}
+
+.gender-input{
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.hover2:hover, .hover2:focus {
+  border: 2px solid #00a18d;
+}
+
+.hover3:hover,.hover3:focus {
+  border: 2px solid #00a18d ;
+}
+
+.oldpower-input{
+  width: 50px;
+  height: 20px;
+  margin-top: 10px;
   margin-right: 5px;
 }
 
-.search-bar {
-  margin-left: 10%;
-  width: 75%;
-  height: 95%;
-  border: 1px #00c7ae solid;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-
-}
-.search-button {
-  height: 100%;
-  width: 10%;
-  background-color: #00c7ae;
-  border: 1px #00c7ae solid;
-  font-size: 14px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  font-weight: bold;
-  color: white;
-}
-
-/* 게시글 목록 */
-.section-board {
-  width: 100%;
-  height: 840px;
+/* 수정완료 버튼 */
+.button-box{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  height: 40px;
+  margin-top: 80px;
 }
 
-/* 아우터박스 */
+.submit-button{
+  width: 100px;
+  background-color: #18c6ae;
+  color: white;
+  border-radius: 5px;
+  border-color: #18c6ae;
+}
 .board-outer-box {
-  width: 100%;
+  margin: 1%;
+  width: 98%;
   height: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: pink; */
 }
-
 /* 이너박스 */
 .board-inner-box {
   width: 100%;
@@ -174,13 +191,11 @@ main {
   text-decoration: none;
   color: black;
 }
-
 .board-inner-box-top {
   width: 100%;
   height: 100%;
   display: flex;
 }
-
 /* 코트명 */
 .court-name {
   height: 100%;
@@ -189,12 +204,10 @@ main {
   display: flex;
   align-items: end;
 }
-
 .court-name-text {
   font-weight: bold;
   font-size: 22px;
 }
-
 /* 모집마감 */
 .recruit-close {
   height: 100%;
@@ -202,7 +215,6 @@ main {
   display: flex;
   align-items: end;
 }
-
 .recruit-close-box {
   width: 90px;
   height: 30px;
@@ -211,33 +223,29 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 10px;
 }
-
 .recruit-close-text {
   color: red;
   font-weight: bold;
   font-size: 15px;
 }
-
 /* 댓글 아이콘 */
 .comment-icon {
   height: 100%;
   width: 5%;
 }
-
 .comment-icon-img-box {
   height: 100%;
   width: 100%;
   margin-top: 6px;
-  margin-left: 12px;
+  margin-left: 20px;
 }
-
 .comment-icon-img {
   object-fit: contain;
-  height: 70%;
-  width: 70%;
+  height: 30px;
+  width: 30px;
 }
-
 /* 댓글 수 */
 .comment-num {
   height: 100%;
@@ -245,11 +253,13 @@ main {
   display: flex;
   justify-content: baseline;
   align-items: center;
+  margin-right: 10px;
 }
-
 .comment-num-text {
-  height: 50%;
-  width: 50%;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-bottom: 4px;
   font-size: 17px;
   font-weight: bold;
 }
@@ -259,7 +269,6 @@ main {
   width: 100%;
   height: 100%;
   display: flex;
-
 }
 
 /* 날짜 */
@@ -271,11 +280,9 @@ main {
   display: flex;
   align-items: center;
 }
-
 .date-text {
   font-size: 18px;
 }
-
 /* 요일 */
 .day {
   height: 100%;
@@ -284,11 +291,9 @@ main {
   display: flex;
   align-items: center;
 }
-
 .day-text {
   font-size: 18px;
 }
-
 /* 시작시간 */
 .time-start {
   height: 100%;
@@ -296,13 +301,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-
 .time-start-text {
   font-size: 18px;
 }
-
 /* 대쉬 */
 .dash {
   height: 100%;
@@ -310,13 +312,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-
 .dash-text {
   font-size: 18px;
 }
-
 /* 종료시간 */
 .time-end {
   height: 100%;
@@ -324,13 +323,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-
 .time-end-text {
   font-size: 18px;
 }
-
 /* 게임유형 */
 .game-type {
   height: 100%;
@@ -338,13 +334,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-
 .game-type-text {
   font-size: 18px;
 }
-
 /* 남 */
 .man {
   height: 100%;
@@ -352,26 +345,20 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-
 .man-text {
   font-size: 18px;
 }
-
 /* 남 수 */
 .man-num {
   height: 100%;
   width: 15px;
   display: flex;
   align-items: center;
-
 }
-
 .man-num-text {
   font-size: 18px;
 }
-
 /* 여 */
 .woman {
   height: 100%;
@@ -379,26 +366,20 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-
 .woman-text {
   font-size: 18px;
 }
-
 /* 여 수 */
 .woman-num {
   height: 100%;
   width: 15px;
   display: flex;
   align-items: center;
-
 }
-
 .woman-num-text {
   font-size: 18px;
 }
-
 /* 구력 */
 .exp {
   height: 100%;
@@ -406,26 +387,20 @@ main {
   display: flex;
   align-items: center;
   justify-content: end;
-
 }
-
 .exp-text {
   font-size: 18px;
 }
-
 /* 년 */
 .year {
   height: 100%;
   width: 20px;
   display: flex;
   align-items: center;
-
 }
-
 .year-text {
   font-size: 18px;
 }
-
 /* 이상 이하 내외 */
 .more-less {
   height: 100%;
@@ -433,9 +408,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-
 .more-less-text {
   font-size: 18px;
 }
@@ -448,7 +421,6 @@ main {
   align-items: center;
   justify-content: center;
 }
-
 .paging-inner {
   width: 70%;
   height: 70%;

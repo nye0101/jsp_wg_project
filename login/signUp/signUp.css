@@ -118,6 +118,7 @@
     border: 2px solid rgb(175, 175, 175);
     font-size: 13px;
     caret-color: #00C7AE;
+    text-align: center;
 }
 .Input-Style3:hover {
     border: 2px solid #00C7AE;

@@ -204,10 +204,7 @@ button {
     color: white;
     font-size: 10px;
 }
-.Delete1:hover {
-    background-color:crimson;
-    box-shadow: none;
-}
+
 /* 수정 버튼 */
 .Edit1 {
     /* border: 1px solid red; */
@@ -219,10 +216,7 @@ button {
     color: white;
     font-size: 10px;
 }
-.Edit1:hover {
-    background-color: #00a18d;
-    box-shadow: none;
-}
+
 
 
 
@@ -307,12 +301,20 @@ button {
 }
 /* 수정 버튼 */
 .Edit2 {
+    border-style: outset;
+
+    border-radius: 5px;
     height: 40px;
     width: 60px;
     font-size: 15px;
+
 }
 /* 삭제 버튼 */
 .Delete2 {
+    border-style: outset;
+    
+    border-radius: 5px;
+    color: #e4584b;
     height: 40px;
     width: 60px;
     font-size: 15px;
@@ -352,11 +354,6 @@ li {
     border-radius: 6px;
     font-size: 15px;
 }
-.PagingBar-Style:hover {
-    background-color: #00C7AE;
-    color: white;
-    box-shadow: none;
-}
 
 
 /* 댓글작성란 영역 */
@@ -381,8 +378,4 @@ li {
     color: white;
     font-size: 17px;
     margin: 0 0 0 20px;
-}
-.Review-Button:hover {
-    background-color: #00a18d;
-    box-shadow: none;
 }

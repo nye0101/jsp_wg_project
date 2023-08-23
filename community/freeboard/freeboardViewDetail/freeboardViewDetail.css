@@ -3,7 +3,7 @@
     font-family: 'LINESeedKR-Bd';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
     font-weight: 700;
-    font-style: normal;
+    font-style: normal; 
 }
 * {
     font-family: 'LINESeedKR-Bd';
@@ -22,7 +22,7 @@ button {
 }
 .Area {
     /* border: 1px solid black; */
-    height: 1340px;
+    height: 1400px;
     width: 1000px;
     display: flex;
     flex-direction: column;
@@ -81,18 +81,16 @@ button {
     caret-color:#00C7AE;
     outline: none;
     font-size: 15px;
+    background-color: white;
 }
 .content-box{
     width: 95%;
     height: 85%;
     /* background-color: pink; */
 }
-.content-text{
-  
-}
 /* 그림자 */
 .Shadow {
-    /* box-shadow: 2px 2px 2px gray; */
+    box-shadow: 2px 2px 2px gray;
 }
 
 
@@ -103,13 +101,14 @@ button {
     height: 120px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-
 }
 /* '커뮤니티 자유게시판' 텍스트 스타일 */
 .MainText-Style {
-    /* border: 1px solid green; */
-
+     /* border: 1px solid green; */
+     margin: 20px 0 0 20px;
+}
+.Text-Color-Gray2 {
+    color: lightgrey;
 }
 
 
@@ -204,10 +203,7 @@ button {
     color: white;
     font-size: 10px;
 }
-.Delete1:hover {
-    background-color:crimson;
-    box-shadow: none;
-}
+
 /* 수정 버튼 */
 .Edit1 {
     /* border: 1px solid red; */
@@ -219,10 +215,7 @@ button {
     color: white;
     font-size: 10px;
 }
-.Edit1:hover {
-    background-color: #00a18d;
-    box-shadow: none;
-}
+
 
 
 
@@ -235,21 +228,34 @@ button {
     border-radius: 6px;
 }
 /* 아이콘 영역 */
-.Icon-OuterContainer {
+.TextIcon-OuterContainer {
     /* border: 1px solid blue; */
     height: 50px;
+    width: 100%;
     display: flex;
     justify-content: end;
 }
-.Icon-InnerContainer {
+.TextIcon-InnerContainer {
+    /* border: 1px solid red; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* '댓글' 텍스트 정렬 */
+.Text-Align {
+    margin: 15px 0 0 50px;
+}
+/* 조회수, 댓글수 아이콘 가로정렬 */
+.Icon-Align {
     /* border: 1px solid blue; */
     display: flex;
-    align-items: center;
+    margin: 10px 0 0 0;
 }
 /* 아이콘 크기 지정 */
 .Icon-Size1 {
     /* border: 1px solid red; */
-    margin: 3px 0 0 0;
+    margin: 5px 0 0 0;
     height: 20px;
     width: 20px;
 }
@@ -259,19 +265,21 @@ button {
     width: 30px;
 }
 /* 아이콘 마진 지정 */
-.Icon-Margin {
-    /* border: 1px solid blue; */
-    margin: 0 50px 0 0;
+.Icon-Margin1 {
+    /* border: 1px solid green; */
+    margin: 0 15px 0 0;
+    display: flex;
+}
+.Icon-Margin2 {
+    /* border: 1px solid green; */
+    margin: 0 55px 0 0;
     display: flex;
 }
 /* 아이콘 텍스트 크기 지정 */
 .Font-Size {
     /* border: 1px solid red; */
     font-size: 15px;
-    margin-top: 5px;
-}
-.Font-Size2{
-    margin-top: 8px;
+    margin: 5px 0 0 5px;
 }
 
 
@@ -309,14 +317,23 @@ button {
 .Edit2 {
     height: 40px;
     width: 60px;
-    font-size: 15px;
+    font-size: 17px;
+    background-color: rgb(225, 225, 225);
+    margin: 0 5px 0 0;
+    color: rgb(90, 90, 90);
+    border-radius: 6px;
 }
+
 /* 삭제 버튼 */
 .Delete2 {
     height: 40px;
     width: 60px;
-    font-size: 15px;
+    font-size: 17px;
+    background-color: rgb(225, 225, 225);
+    color: #e4584b;
+    border-radius: 6px;
 }
+
 
 
 /* 페이징바 영역 */
@@ -350,13 +367,10 @@ li {
     width: 50px;
     background-color: rgb(225, 225, 225);
     border-radius: 6px;
-    font-size: 15px;
+    font-size: 20px;
+    color: rgb(90, 90, 90);
 }
-.PagingBar-Style:hover {
-    background-color: #00C7AE;
-    color: white;
-    box-shadow: none;
-}
+
 
 
 /* 댓글작성란 영역 */
@@ -381,8 +395,4 @@ li {
     color: white;
     font-size: 17px;
     margin: 0 0 0 20px;
-}
-.Review-Button:hover {
-    background-color: #00a18d;
-    box-shadow: none;
 }

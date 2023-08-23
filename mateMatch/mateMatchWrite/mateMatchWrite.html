@@ -21,10 +21,12 @@
                 <!-- 코드장 이름 -->
                 <div class = "form-court-box distance"> 코트장 이름
                     <div class = "form-court-text">
-                        <input type = "text" placeholder = "입력해주세요">
+                        <input id = "court-text-box" type = "text" placeholder = "코트장 명을 입력해주세요">
+                    </div>
+                    <div>
+                        <input id = "address-text-box" type = "text" placeholder = "테니스장 주소">
                         <button id = "address-button">주소 찾기</button>
                     </div>
-                </div>
                 <!-- 날짜 -->
                 <div class = "form-date-box distance">날짜
                     <div class = "form-date-text">
@@ -136,9 +138,9 @@
         <section class = "mate-write-button">
             <form class = "form-button">
                 <div>
-                <button class = "mate-detail-form-button1" type="button" 
+                <button type = "button" class = "mate-detail-form-button1" 
                 onclick="location.href='../mateMatchList/mateMatchList.html'"><span>뒤로가기</span></button>
-                <button class = "mate-detail-form-button2" type="button" 
+                <button type = "button" class = "mate-detail-form-button2"
                 onclick="location.href='../mateMatchViewDetail/mateMatchViewDetail.html'"><span>작성완료</span></button>
                 </div>
             </form>

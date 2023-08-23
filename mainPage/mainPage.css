@@ -701,17 +701,14 @@ footer{
     justify-content: space-around;
     flex-wrap:inherit;
 }
-.main-footer-category-termOfUsetag,
-.main-footer-category-termOfUsetag2{
+.main-footer-category-termOfUsetag{
     text-decoration: none;
     margin: 20px 40px 25px 40px;
 }
-.main-footer-category-termOfUselist,
-.main-footer-category-termOfUselist2{
+.main-footer-category-termOfUselist{
     color: #949191;
 }
-.main-footer-category-termOfUselist:hover,
-.main-footer-category-termOfUselist2:hover{
+.main-footer-category-termOfUselist:hover{
     text-shadow: 1px 1px 1px #888585;
 }
 .main-footer-text-group{
@@ -738,13 +735,12 @@ footer{
     align-items: center;
     top: 0;
 }
-.modal-termOfUse,
-.modal-termOfUse2{
+.modal-termOfUse{
     display: none;
     position: fixed;
     background-color: #fffdfd;
     top: 15%;
-    left: 20%;
+    left: 18%;
     z-index: 15;
     width: 50%;
     height: 60%;
@@ -757,14 +753,14 @@ footer{
     display: none;
     font-size: 15px;
     position: fixed;
-    width: 4%;
-    height: 5%;
+    width: 80px;
+    height: 35px;
     background-color: #00C7AE;
     color: white;
-    top: 18%;
+    top: 17%;
     text-align: center;
     line-height: 5vh;
-    left: 68%;
+    left: 65%;
     z-index: 16;
     border-radius: 6px;
     cursor: pointer;
