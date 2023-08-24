@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>공지사항 글수정</title>
-    <link rel="stylesheet" href="admin_notice_edit.css" />
+    <link rel="stylesheet" href="admin_noticeEdit.css" />
   </head>
   <body>
     <main>
       <!-- 공지사항 글수정-->
-      <section>
-        <div class="">
-          <div class="section-top-category-name ">공지사항 글수정</div>
+      <section class="first-section">
+        <div class="section-top-category-name">
+          <div class="section-top-category-name-text1">커뮤니티</div>
+          <div class="section-top-category-name-text2">공지사항 - 글수정</div>
         </div>
       </section>
       <!-- 제목 & 내용 -->
@@ -20,26 +21,20 @@
           <div class="titleContent">
             <div class="title">
               <p>제목</p>
-              <div>
-                <input
-                  class="titleInput"
-                  type="text"
-                  name="title"
-                  value=""
-                  placeholder="제목을 입력하세요"
-                />
+              <div class="title-out-box">
+                <textarea class="title-in-box-text"
+                name="title" 
+                placeholder="제목을 입력하세요(50자 이내)">불법광고 관련 안내</textarea>
               </div>
             </div>
-            <div class="comment">
+            <div class="content">
               <p>내용</p>
-              <div>
+              <div class="content-box-out">
                 <textarea
-                  class="comment-area border-radius"
-                  name="comment"
-                  value=""
-                  placeholder="내용을 입력하세요"
-                ></textarea
-                >
+                  class="content-area border-radius"
+                  name="content"
+                  placeholder="내용을 입력하세요(3000자 이내)"
+                >불법광고 하지마라 진짜</textarea>
               </div>
             </div>
           </div>
@@ -49,17 +44,18 @@
           <div class="pagebackComplete border-radius">
             <button type="button" 
             onclick="location.href='../admin_noticeViewDetail/noticeViewDetail.html'"
-            class="pageback button-size border-radius bgRed colorWhite"
+              class="pageback button-size border-radius bgRed colorWhite"
               name="pageback"
             >
               뒤로가기
             </button>
-            <button type="button" 
+
+            <button type="button"
             onclick="location.href='../admin_noticeViewDetail/noticeViewDetail.html'"
               class="complete button-size border-radius bgGreen colorWhite "
               name="complete"
             >
-              수정완료
+              작성완료
             </button>
           </div>
         </section>

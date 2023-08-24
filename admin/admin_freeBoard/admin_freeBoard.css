@@ -76,11 +76,18 @@ main {
   height: 100%;
   width: 300px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: end;
 }
-.section-top-category-name-text {
+.section-top-category-name-text1 {
+  font-size: 20px;
+  color: black;
   font-weight: bold;
-  font-size: 28px;
+  margin-bottom: 5px;
+}
+.section-top-category-name-text2 {
+  font-size: 15px;
+  color: lightgrey;
 }
 
 /* 검색바 */
@@ -267,15 +274,48 @@ main {
 }
 
 /* 페이징 */
-.section-paging {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.page_wrap {
+	text-align:center;
+	font-size:0;
+    padding-top: 10px;
+ }
+.page_nation {
+	display:inline-block;
 }
-.paging-inner {
-  width: 70%;
-  height: 70%;
-  border: 1px black solid;
+.page_nation .none {
+	display:none;
+}
+.page_nation a {
+	display:block;
+	margin:0 3px;
+	float:left;
+	border:1px solid #e6e6e6;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	background-color:#fff;
+	font-size:13px;
+	color:#999999;
+	text-decoration:none;
+}
+.page_nation .arrow {
+	border:1px solid #ccc;
+}
+.page_nation .pprev {
+	background:#f8f8f8;
+}
+.page_nation .prev {
+	background:#f8f8f8;
+}
+.page_nation .next {
+	background:#f8f8f8;
+}
+.page_nation .nnext {
+	background:#f8f8f8;
+}
+.page_nation a.active {
+	background-color: #18c6ae;
+	color:#fff;
+	border:1px solid #18c6ae;
 }
