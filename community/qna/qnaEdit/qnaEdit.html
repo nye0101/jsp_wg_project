@@ -8,10 +8,11 @@
   </head>
   <body>
     <main>
-      <!-- Q&A 글수정-->
-      <section>
-        <div class="">
-          <div class="section-top-category-name">Q&A 글수정</div>
+      <!-- 자유게시판 글수정-->
+      <section class="first-section">
+        <div class="section-top-category-name">
+          <div class="section-top-category-name-text1">커뮤니티</div>
+          <div class="section-top-category-name-text2">Q&A - 글수정</div>
         </div>
       </section>
       <!-- 제목 & 내용 -->
@@ -20,25 +21,20 @@
           <div class="titleContent">
             <div class="title">
               <p>제목</p>
-              <div>
-                <input
-                  class="titleInput"
-                  type="text"
-                  name="title"
-                  value="이것좀 알려주세요"
-                  placeholder="제목을 입력하세요"
-                />
+              <div class="title-out-box">
+                <textarea class="title-in-box-text"
+                name="title" 
+                placeholder="제목을 입력하세요(50자 이내)"></textarea>
               </div>
             </div>
-            <div class="comment">
+            <div class="content">
               <p>내용</p>
-              <div>
+              <div class="content-box-out">
                 <textarea
-                  class="comment-area border-radius"
-                  name="comment"
-                  value="이 방법이 좋나요 저방법이 좋나요"
-                  placeholder="내용을 입력하세요"
-                >"이 방법이 좋나요 저방법이 좋나요"</textarea>
+                  class="content-area border-radius"
+                  name="content"
+                  placeholder="내용을 입력하세요(3000자 이내)"
+                >대충 쳐도 좋아요</textarea>
               </div>
             </div>
           </div>
@@ -46,14 +42,15 @@
         <!-- 뒤로가기 & 작성완료 -->
         <section>
           <div class="pagebackComplete border-radius">
-            <button type="button" 
+            <button type="button"
             onclick="location.href='../qnaViewDetail/qnaViewDetail.html'"
               class="pageback button-size border-radius bgRed colorWhite"
               name="pageback"
             >
               뒤로가기
             </button>
-            <button type="button" 
+
+            <button type="button"
             onclick="location.href='../qnaViewDetail/qnaViewDetail.html'"
               class="complete button-size border-radius bgGreen colorWhite "
               name="complete"
