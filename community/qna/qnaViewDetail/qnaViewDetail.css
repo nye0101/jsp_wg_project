@@ -73,6 +73,7 @@ button {
     width: 95%;
     height: 85%;
     border: none;
+    resize: none;
 }
 
 
@@ -387,6 +388,7 @@ button {
     width: 95%;
     background-color: white;
     border: none;
+    resize: none;
 }
 /* '댓글 등록' 버튼 */
 .Review-Button {

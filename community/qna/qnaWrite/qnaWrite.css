@@ -91,7 +91,7 @@ border: none;
  height: 70%;
  width: 98%;
  border: none;
- /* background-color: yellow; */
+ resize: none;
 }
 
 .content {
@@ -113,7 +113,7 @@ border: none;
   resize: none;
   width:  97%;
   height: 90%;
-  /* box-sizing: border-box; */
+  resize: none;
   
 }
 .border-radius {

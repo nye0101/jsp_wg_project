@@ -91,7 +91,7 @@ border: none;
  height: 70%;
  width: 98%;
  border: none;
- /* background-color: yellow; */
+ resize: none;
 }
 
 .content {
