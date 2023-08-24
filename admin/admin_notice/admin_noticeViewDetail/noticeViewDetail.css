@@ -9,11 +9,9 @@
     font-family: 'LINESeedKR-Bd';
     margin: 0;
     padding: 0;
-    
-    
+    /* border: 1px solid black; */
 }
 span {
-    /* border: 1px solid green; */
     font-size: 15px;
 }
 button {
@@ -22,7 +20,6 @@ button {
     cursor: pointer;
 }
 .Area {
-    /* border: 1px solid black; */
     height: 1340px;
     width: 1000px;
     display: flex;
@@ -66,52 +63,40 @@ button {
     align-items: center;
     width: 40px;
 }
-/* 인풋 스타일 */
-/* Input-Style1은 사용안함 */
-/* .Input-Style1 {
-    border-radius: 6px;
-    border: 5px solid rgb(200, 200, 200);
-    outline: none;
-    caret-color: #00C7AE;
-    font-size: 15px;
-} */
+
 .Input-Style2 {
     border-radius: 6px;
     border: 1px solid rgb(200, 200, 200);
-    box-shadow: 0 0 5px 1px gray inset;
-    caret-color:#00C7AE;
-    outline: none;
-    font-size: 15px;
+    background-color: white;
 }
 .content-box{
     width: 95%;
     height: 85%;
-    /* background-color: pink; */
-}
-.content-text{
-  
-}
-/* 그림자 */
-.Shadow {
-    /* box-shadow: 2px 2px 2px gray; */
+    border: none;
+    resize: none;
 }
 
 
 
 /* '커뮤니티 자유게시판' 텍스트 컨테이너 */
 .MainText-Container {
-    /* border: 1px solid red; */
     height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: end;
 
 }
-/* '커뮤니티 자유게시판' 텍스트 스타일 */
-.MainText-Style {
-    /* border: 1px solid green; */
-
+.MainText-Container-text1{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
+.MainText-Container-text2{
+    font-size: 15px;
+  color: lightgrey;
+}
+
 
 
 
@@ -205,10 +190,7 @@ button {
     color: white;
     font-size: 10px;
 }
-.Delete1:hover {
-    background-color:crimson;
-    box-shadow: none;
-}
+
 /* 수정 버튼 */
 .Edit1 {
     /* border: 1px solid red; */
@@ -220,10 +202,7 @@ button {
     color: white;
     font-size: 10px;
 }
-.Edit1:hover {
-    background-color: #00a18d;
-    box-shadow: none;
-}
+
 
 
 
@@ -237,42 +216,42 @@ button {
 }
 /* 아이콘 영역 */
 .Icon-OuterContainer {
-    /* border: 1px solid blue; */
     height: 50px;
     display: flex;
     justify-content: end;
+    margin-right: 48px;
 }
 .Icon-InnerContainer {
-    /* border: 1px solid blue; */
+    /* background-color: yellow; */
+    width: 110px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
 }
 /* 아이콘 크기 지정 */
 .Icon-Size1 {
-    /* border: 1px solid red; */
-    margin: 3px 0 0 0;
+    margin: 4px 0 0 0;
     height: 20px;
     width: 20px;
 }
 .Icon-Size2 {
-    /* border: 1px solid red; */
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
+    margin-top: 3px;
 }
 /* 아이콘 마진 지정 */
 .Icon-Margin {
-    /* border: 1px solid blue; */
-    margin: 0 50px 0 0;
+    /* margin: 0 50px 0 0; */
     display: flex;
 }
 /* 아이콘 텍스트 크기 지정 */
 .Font-Size {
-    /* border: 1px solid red; */
-    font-size: 15px;
-    margin-top: 5px;
+    font-size: 17px;
+    margin-top: 6px;
 }
 .Font-Size2{
-    margin-top: 8px;
+    margin-top: 7px;
 }
 
 
@@ -308,55 +287,71 @@ button {
 }
 /* 수정 버튼 */
 .Edit2 {
+    border-style: outset;
+
+    border-radius: 5px;
     height: 40px;
     width: 60px;
     font-size: 15px;
+
 }
 /* 삭제 버튼 */
 .Delete2 {
+    border-style: outset;
+    
+    border-radius: 5px;
+    color: #e4584b;
     height: 40px;
     width: 60px;
     font-size: 15px;
 }
 
 
-/* 페이징바 영역 */
-.PagingBar-Container {
-    /* border: 1px solid blue; */
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* 페이징 */
+.page_wrap {
+	text-align:center;
+	font-size:0;
+    margin-top: 25px;
+ }
+.page_nation {
+	display:inline-block;
 }
-/* 페이징바 정렬 */
-.PagingBar-Align {
-    /* border: 1px solid red; */
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
+.page_nation .none {
+	display:none;
 }
-/* 페이징바 스타일 */
-li {
-    /* border: 1px solid red; */
-    height: 50px;
-    width: 50px;
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto 5px;
+.page_nation a {
+	display:block;
+	margin:0 3px;
+	float:left;
+	border:1px solid #e6e6e6;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	background-color:#fff;
+	font-size:13px;
+	color:#999999;
+	text-decoration:none;
 }
-.PagingBar-Style {
-    height: 50px;
-    width: 50px;
-    background-color: rgb(225, 225, 225);
-    border-radius: 6px;
-    font-size: 15px;
+.page_nation .arrow {
+	border:1px solid #ccc;
 }
-.PagingBar-Style:hover {
-    background-color: #00C7AE;
-    color: white;
-    box-shadow: none;
+.page_nation .pprev {
+	background:#f8f8f8;
+}
+.page_nation .prev {
+	background:#f8f8f8;
+}
+.page_nation .next {
+	background:#f8f8f8;
+}
+.page_nation .nnext {
+	background:#f8f8f8;
+}
+.page_nation a.active {
+	background-color: #18c6ae;
+	color:#fff;
+	border:1px solid #18c6ae;
 }
 
 
@@ -367,23 +362,40 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
+}
+
+.ReviewWrite-Container-form{
+    height: 70%;
+    width: 80%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.ReviewWrite-Container-box1{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin-left: 25px;
+    background-color: white;
 }
 /* 댓글작성란 스타일 */
-.Input-Size2 {
-    height: 80px;
-    width: 750px;
+.ReviewWrite-Container-form-text{
+    height: 70%;
+    width: 95%;
+    background-color: white;
+    border: none;
 }
 /* '댓글 등록' 버튼 */
 .Review-Button {
-    height: 80px;
+    height: 80%;
     width: 100px;
     background-color: #00C7AE;
     border-radius: 6px;
     color: white;
     font-size: 17px;
-    margin: 0 0 0 20px;
-}
-.Review-Button:hover {
-    background-color: #00a18d;
-    box-shadow: none;
+    margin-left: 20px;
 }
