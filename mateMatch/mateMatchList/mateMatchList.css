@@ -1,4 +1,11 @@
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
 * {
+  font-family: 'LINESeedKR-Bd';
   margin: 0;
   padding: 0;
   /* border: 1px solid black; */
@@ -9,10 +16,14 @@ main {
   height: 1340px;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
   margin: auto;
 }
-
+/* 상단 여백 */
+.top-spacing{
+  width: 100%;
+  height: 55px;
+}
 /*  메이트찾기 & 글쓰기 창 */
 .section-top {
   width: 100%;
@@ -24,7 +35,8 @@ main {
   height: 100%;
   width: 70%;
   display: flex;
-  /* align-items: center; */
+  flex-direction: column;
+  justify-content: end;
 }
 .section-top-category-name-text {
   width: 100%;
@@ -37,6 +49,7 @@ main {
   font-weight: bold;
   font-size: 15px;
   color: lightgrey;
+  
 }
 /* 글쓰기버튼 */
 .section-top-write {
@@ -49,7 +62,6 @@ main {
 .section-top-write-a {
   height: 40px;
   width: 100px;
-  margin-right: 40px;
 }
 .button-write {
   height: 100%;
@@ -71,6 +83,7 @@ width: 100%;
 height: 100px;
 display: flex;
 justify-content: center;
+align-items: center;
 margin-top: 10px;
 }
 
@@ -83,8 +96,8 @@ align-items: center;
 }
 
 .search-inner {
-width: 100%;
-height: 100%;
+  width: 85%;
+  height: 100%;
 display: flex;
 }
 
@@ -94,8 +107,8 @@ select{
 }
 
 .search-bar {
-width: 70%;
-height: 95%;
+  width: 100%;
+  height: 96%;
 border: 1px #00c7ae solid;
 border-top-left-radius: 6px;
 border-bottom-left-radius: 6px;
@@ -181,17 +194,19 @@ color: white;
 .comment-icon {
   height: 100%;
   width: 5%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 .comment-icon-img-box {
-  height: 100%;
-  width: 100%;
-  margin-top: 6px;
-  margin-left: 12px;
+  height: 40%;
+  width: 70%;
+  margin-bottom: 3px;
 }
 .comment-icon-img {
   object-fit: contain;
-  height: 70%;
-  width: 70%;
+  height: 100%;
+  width: 100%;
 }
 /* 댓글 수 */
 .comment-num {
@@ -202,10 +217,13 @@ color: white;
   align-items: center;
 }
 .comment-num-text {
-  height: 50%;
-  width: 50%;
+  height: 40%;
+  width: 60%;
   font-size: 17px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 이너박스 하단  */
@@ -356,21 +374,49 @@ color: white;
 .more-less-text {
   font-size: 18px;
 }
-
 /* 페이징 */
-.section-paging {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.page_wrap {
+	text-align:center;
+	font-size:0;
+    padding-top: 10px;
+ }
+.page_nation {
+	display:inline-block;
 }
-.paging-inner {
-  width: 70%;
-  height: 50%;
-  border: 1px solid black;
+.page_nation .none {
+	display:none;
 }
-
-.none-radius{
-  border-radius: 0px;
+.page_nation a {
+	display:block;
+	margin:0 3px;
+	float:left;
+	border:1px solid #e6e6e6;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	background-color:#fff;
+	font-size:13px;
+	color:#999999;
+	text-decoration:none;
+}
+.page_nation .arrow {
+	border:1px solid #ccc;
+}
+.page_nation .pprev {
+	background:#f8f8f8;
+}
+.page_nation .prev {
+	background:#f8f8f8;
+}
+.page_nation .next {
+	background:#f8f8f8;
+}
+.page_nation .nnext {
+	background:#f8f8f8;
+}
+.page_nation a.active {
+	background-color: #18c6ae;
+	color:#fff;
+	border:1px solid #18c6ae;
 }
