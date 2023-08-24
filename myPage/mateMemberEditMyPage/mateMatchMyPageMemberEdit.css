@@ -121,18 +121,16 @@ aside{
   margin-top: 10px;
 }
 
-.pwmatch-input{
+.pwmatch-input,
+.pwmatch-input-check{
   width: 250px;
   height: 20px;
   margin-top: 10px;
 }
 
-.pwmatch-ment-correct-text{
-  /* display: none; */
-}
-
-.pwmatch-ment-incorrect-text{
-  /* display: none; */
+.pwmatch-ment-box{
+  height: 20px;
+  color: gray;
 }
 
 .gender-input{

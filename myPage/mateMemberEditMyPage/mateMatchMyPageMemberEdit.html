@@ -6,6 +6,7 @@
     <title>마이페이지 회원정보 수정</title>
     <link rel = "stylesheet" href = "mateMatchMyPageMemberEdit.css">
     <script src = "mateMatchMyPageMemberEdit.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <main>
@@ -59,21 +60,20 @@
         <!-- 비밀번호 변경 -->
         <div class = "pw-box mp">비밀번호 변경
             <div class = "pw-text-box">
-            <input class = "pwmatch-input" type = "password" placeholder="사용 할 비밀번호를 입력해주세요">
+            <input class = "pwmatch-input" type = "password" placeholder="사용 할 비밀번호를 입력해주세요" oninput="pwCheck()">
             </div>
         </div>
         <!-- 비밀번호 확인 -->
         <div class = "pwmatch-box mp">비밀번호 확인
             <div class = "pwmatch-text-box">
-            <input class = "pwmatch-input" type = "password" placeholder="입력한 비밀번호를 다시 입력해주세요">
-                <p class = "pwmatch-ment-correct-text">※ 비밀번호가 일치합니다</p>
-                <p class = "pwmatch-ment-incorrect-text">※ 비밀번호가 불일치합니다</p>
-            </div>
-            <!-- 비밀번호 확인 문구 -->
-            <div class = "pwmatch-ment-box mp">
-                
+            <input class = "pwmatch-input-check" type = "password" placeholder="입력한 비밀번호를 다시 입력해주세요" oninput="pwCheck()">
             </div>
         </div>
+        <!-- 비밀번호 확인 문구 -->
+        <div class = "pwmatch-ment-box mp">
+            비밀번호를 입력하세요
+        </div>
+        
         <!-- 이메일 -->
         <div class = "email-box mp">이메일 :
             <span class = "emial-text">wogin@naver.com</span>
