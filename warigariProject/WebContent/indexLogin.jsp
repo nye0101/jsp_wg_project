@@ -1,18 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메인페이지</title>
+    <title>메인페이지(로그인후 화면)</title>
     <link rel="stylesheet" href="resource/css/mainPage.css">
     <script defer src="resource/js/mainPage.js"></script>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f49922a8774592c118e15c56666d5011&libraries=services"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <%@ include file="header.jsp" %>
+    <%@ include file="headerLogin.jsp" %>
     <main>
         <section class="main-section1">
             <div class="main-banner-group">
@@ -546,5 +546,4 @@
     <%@ include file="footer.jsp" %>
 	
 </body>
-
 </html>
