@@ -14,9 +14,10 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/팀프로젝트/resource/lib/tomcat-dbcp.jar"/>
-	<classpathentry kind="lib" path="C:/팀프로젝트/resource/lib/jstl.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc6.jar"/>
-	<classpathentry kind="lib" path="C:/팀프로젝트/resource/lib/mybatis-3.5.11.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/resource/lib/jstl.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/resource/lib/mybatis-3.5.11.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/resource/lib/mysql-connector-java-8.0.28.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/resource/lib/tomcat-dbcp.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
