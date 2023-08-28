@@ -6,11 +6,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Q&A 상세보기</title>
-<link rel="stylesheet" href="../../resource/css/qnaViewDetail.css" />
+<link rel="stylesheet" href="../../../resource/css/qnaViewDetail.css" />
 <!-- 구글 폰트 -->
 </head>
 <body style="display: block; margin: 100px 0;">
-	<%@ include file="../../header.jsp"%>
+	<%@ include file="../../../header.jsp"%>
 	<!-- 커뮤니티(Q&A) 상세보기 전체 영역 -->
 	<div class="Area">
 		<!-- 위쪽 컨테이너 -->
@@ -58,11 +58,11 @@
 				<div class="Button-OuterContainer1">
 					<div class="Button-InnerContainer1">
 						<button class="Delete1" type="button"
-							onclick="location.href='../qnaList/qnaList.html'">
+							onclick="location.href='../qnaList/qnaList.jsp'">
 							<span>삭제</span>
 						</button>
 						<button class="Edit1" type="button"
-							onclick="location.href='../qnaEdit/qnaEdit.html'">
+							onclick="location.href='../qnaEdit/qnaEdit.jsp'">
 							<span>수정</span>
 						</button>
 					</div>
@@ -76,12 +76,12 @@
 			<div class="Icon-OuterContainer">
 				<div class="Icon-InnerContainer">
 					<div class="Icon-Margin">
-						<img class="Icon-Size1" src="../../resource/img/view.png"
+						<img class="Icon-Size1" src="../../../resource/img/view.png"
 							alt="조회수" />
 						<div class="Font-Size">112</div>
 					</div>
 					<div class="Icon-Margin">
-						<img class="Icon-Size2" src="../../resource/img/comment.png"
+						<img class="Icon-Size2" src="../../../resource/img/comment.png"
 							alt="댓글수" />
 						<div class="Font-Size Font-Size2">12</div>
 					</div>
@@ -196,6 +196,6 @@
 			</div>
 		</section>
 	</div>
-	<%@ include file="../../footer.jsp"%>
+	<%@ include file="../../../footer.jsp"%>
 </body>
 </html>

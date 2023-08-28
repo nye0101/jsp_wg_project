@@ -6,28 +6,28 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Q&A</title>
-<link rel="stylesheet" href="../../resource/css/qnaList.css" />
+<link rel="stylesheet" href="../../../resource/css/qnaList.css" />
 </head>
 <body style="display: block; margin: 100px 0;">
-	<%@ include file="../../header.jsp"%>
+	<%@ include file="../../../header.jsp"%>
 	<div class="container">
 		<!-- 좌측 어사이드 -->
 		<aside>
 			<div class="aside-spacing"></div>
 			<section class="section-freeboard">
 				<a class="freeboard-a"
-					href="/community/freeboard/freeboardList/freeboardList.html">
+					href="../../freeboard/freeboardList/freeboardList.jsp">
 					<div class="freeboard">자유게시판</div>
 				</a>
 			</section>
 			<section class="section-qna">
-				<a class="qna-a" href="/community/qna/qnaList/qnaList.html">
+				<a class="qna-a" href="../../qna/qnaList/qnaList.jsp">
 					<div class="qna">Q&A</div>
 				</a>
 			</section>
 			<section class="section-notice">
 				<a class="notice-a"
-					href="/community/notice/noticeList/noticeList.html">
+					href="../../notice/noticeList/noticeList.jsp">
 					<div class="notice">공지사항</div>
 				</a>
 			</section>
@@ -44,7 +44,7 @@
 				</div>
 				<!-- 글쓰기버튼 -->
 				<div class="section-top-write">
-					<a class="section-top-write-a" href="../qnaWrite/qnaWrite.html">
+					<a class="section-top-write-a" href="../qnaWrite/qnaWrite.jsp">
 						<button class="button-write">글쓰기</button>
 					</a>
 				</div>
@@ -66,7 +66,7 @@
 				<!-- @@아우터박스 -->
 				<div class="board-outer-box">
 					<a class="board-inner-box"
-						href="../qnaViewDetail/qnaViewDetail.html"> <!-- 이너박스 상단 -->
+						href="../qnaViewDetail/qnaViewDetail.jsp"> <!-- 이너박스 상단 -->
 						<div class="board-inner-box-title">
 							<div class="board-inner-box-title-text">구력 2개월 테린이인데 라켓 추천
 								부탁드려요</div>
@@ -77,7 +77,7 @@
 						</div> <!-- 이너박스 하단 -->
 						<div class="board-inner-box-view-comment">
 							<div class="comment-view">
-								<img class="comment-view-img" src="../../resource/img/view.png"
+								<img class="comment-view-img" src="../../../resource/img/view.png"
 									alt="" />
 							</div>
 							<div class="comment-view-cnt">
@@ -85,7 +85,7 @@
 							</div>
 							<div class="comment-comment">
 								<img class="comment-comment-img"
-									src="../../resource/img/comment.png" alt="" />
+									src="../../../resource/img/comment.png" alt="" />
 							</div>
 							<div class="comment-comment-cnt">
 								<div class="comment-comment-cnt-text">12</div>
@@ -99,7 +99,7 @@
 				<!-- @@아우터박스 -->
 				<div class="board-outer-box">
 					<a class="board-inner-box"
-						href="../qnaViewDetail/qnaViewDetail.html"> <!-- 이너박스 상단 -->
+						href="../qnaViewDetail/qnaViewDetail.jsp"> <!-- 이너박스 상단 -->
 						<div class="board-inner-box-title">
 							<div class="board-inner-box-title-text">구력 2개월 테린이인데 라켓 추천
 								부탁드려요</div>
@@ -110,7 +110,7 @@
 						</div> <!-- 이너박스 하단 -->
 						<div class="board-inner-box-view-comment">
 							<div class="comment-view">
-								<img class="comment-view-img" src="../../resource/img/view.png"
+								<img class="comment-view-img" src="../../../resource/img/view.png"
 									alt="" />
 							</div>
 							<div class="comment-view-cnt">
@@ -118,7 +118,7 @@
 							</div>
 							<div class="comment-comment">
 								<img class="comment-comment-img"
-									src="../../resource/img/comment.png" alt="" />
+									src="../../../resource/img/comment.png" alt="" />
 							</div>
 							<div class="comment-comment-cnt">
 								<div class="comment-comment-cnt-text">12</div>
@@ -132,7 +132,7 @@
 				<!-- @@아우터박스 -->
 				<div class="board-outer-box">
 					<a class="board-inner-box"
-						href="../qnaViewDetail/qnaViewDetail.html"> <!-- 이너박스 상단 -->
+						href="../qnaViewDetail/qnaViewDetail.jsp"> <!-- 이너박스 상단 -->
 						<div class="board-inner-box-title">
 							<div class="board-inner-box-title-text">구력 2개월 테린이인데 라켓 추천
 								부탁드려요</div>
@@ -143,7 +143,7 @@
 						</div> <!-- 이너박스 하단 -->
 						<div class="board-inner-box-view-comment">
 							<div class="comment-view">
-								<img class="comment-view-img" src="../../resource/img/view.png"
+								<img class="comment-view-img" src="../../../resource/img/view.png"
 									alt="" />
 							</div>
 							<div class="comment-view-cnt">
@@ -151,7 +151,7 @@
 							</div>
 							<div class="comment-comment">
 								<img class="comment-comment-img"
-									src="../../resource/img/comment.png" alt="" />
+									src="../../../resource/img/comment.png" alt="" />
 							</div>
 							<div class="comment-comment-cnt">
 								<div class="comment-comment-cnt-text">12</div>
@@ -165,7 +165,7 @@
 				<!-- @@아우터박스 -->
 				<div class="board-outer-box">
 					<a class="board-inner-box"
-						href="../qnaViewDetail/qnaViewDetail.html"> <!-- 이너박스 상단 -->
+						href="../qnaViewDetail/qnaViewDetail.jsp"> <!-- 이너박스 상단 -->
 						<div class="board-inner-box-title">
 							<div class="board-inner-box-title-text">구력 2개월 테린이인데 라켓 추천
 								부탁드려요</div>
@@ -176,7 +176,7 @@
 						</div> <!-- 이너박스 하단 -->
 						<div class="board-inner-box-view-comment">
 							<div class="comment-view">
-								<img class="comment-view-img" src="../../resource/img/view.png"
+								<img class="comment-view-img" src="../../../resource/img/view.png"
 									alt="" />
 							</div>
 							<div class="comment-view-cnt">
@@ -184,7 +184,7 @@
 							</div>
 							<div class="comment-comment">
 								<img class="comment-comment-img"
-									src="../../resource/img/comment.png" alt="" />
+									src="../../../resource/img/comment.png" alt="" />
 							</div>
 							<div class="comment-comment-cnt">
 								<div class="comment-comment-cnt-text">12</div>
@@ -198,7 +198,7 @@
 				<!-- @@아우터박스 -->
 				<div class="board-outer-box">
 					<a class="board-inner-box"
-						href="../qnaViewDetail/qnaViewDetail.html"> <!-- 이너박스 상단 -->
+						href="../qnaViewDetail/qnaViewDetail.jsp"> <!-- 이너박스 상단 -->
 						<div class="board-inner-box-title">
 							<div class="board-inner-box-title-text">구력 2개월 테린이인데 라켓 추천
 								부탁드려요</div>
@@ -209,7 +209,7 @@
 						</div> <!-- 이너박스 하단 -->
 						<div class="board-inner-box-view-comment">
 							<div class="comment-view">
-								<img class="comment-view-img" src="../../resource/img/view.png"
+								<img class="comment-view-img" src="../../../resource/img/view.png"
 									alt="" />
 							</div>
 							<div class="comment-view-cnt">
@@ -217,7 +217,7 @@
 							</div>
 							<div class="comment-comment">
 								<img class="comment-comment-img"
-									src="../../resource/img/comment.png" alt="" />
+									src="../../../resource/img/comment.png" alt="" />
 							</div>
 							<div class="comment-comment-cnt">
 								<div class="comment-comment-cnt-text">12</div>
@@ -231,7 +231,7 @@
 				<!-- @@아우터박스 -->
 				<div class="board-outer-box">
 					<a class="board-inner-box"
-						href="../qnaViewDetail/qnaViewDetail.html"> <!-- 이너박스 상단 -->
+						href="../qnaViewDetail/qnaViewDetail.jsp"> <!-- 이너박스 상단 -->
 						<div class="board-inner-box-title">
 							<div class="board-inner-box-title-text">구력 2개월 테린이인데 라켓 추천
 								부탁드려요</div>
@@ -242,7 +242,7 @@
 						</div> <!-- 이너박스 하단 -->
 						<div class="board-inner-box-view-comment">
 							<div class="comment-view">
-								<img class="comment-view-img" src="../../resource/img/view.png"
+								<img class="comment-view-img" src="../../../../resource/img/view.png"
 									alt="" />
 							</div>
 							<div class="comment-view-cnt">
@@ -250,7 +250,7 @@
 							</div>
 							<div class="comment-comment">
 								<img class="comment-comment-img"
-									src="../../resource/img/comment.png" alt="" />
+									src="../../../resource/img/comment.png" alt="" />
 							</div>
 							<div class="comment-comment-cnt">
 								<div class="comment-comment-cnt-text">12</div>
@@ -280,6 +280,6 @@
 
 		</main>
 	</div>
-	<%@ include file="../../footer.jsp"%>
+	<%@ include file="../../../footer.jsp"%>
 </body>
 </html>

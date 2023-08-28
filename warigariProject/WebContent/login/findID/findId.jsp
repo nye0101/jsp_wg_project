@@ -6,10 +6,10 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>아이디 찾기</title>
-<link rel="stylesheet" href="../resource/css/findId.css" />
+<link rel="stylesheet" href="../../resource/css/findId.css" />
 </head>
 <body>
-	<%@ include file="../../header.jsp"%>
+	<%@ include file="../../../header.jsp"%>
 	<main class="">
 		<section>
 			<div class="findPwH2">
@@ -52,7 +52,7 @@
 				style="cursor: pointer">아이디 찾기 실패</a>
 		</div>
 	</main>
-	<%@ include file="../../footer.jsp"%>
+	<%@ include file="../../../footer.jsp"%>
 
 </body>
 </html>
