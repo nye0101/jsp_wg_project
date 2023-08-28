@@ -8,8 +8,9 @@
 <title>Q&A 글작성</title>
 <link rel="stylesheet" href="../../resource/css/qnaWrite.css" />
 </head>
-<body style="display: block; margin: 100px 0;">
+<body>
 	<%@ include file="../../header.jsp"%>
+
 	<main>
 		<!-- Q&A 글작성-->
 		<section class="first-section">
@@ -54,6 +55,7 @@
 			</section>
 		</form>
 	</main>
+
 	<%@ include file="../../footer.jsp"%>
 </body>
 </html>

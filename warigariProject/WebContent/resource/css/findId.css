@@ -21,6 +21,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #fffffa;
+  flex-direction: column;
 }
 
 .bgGray {

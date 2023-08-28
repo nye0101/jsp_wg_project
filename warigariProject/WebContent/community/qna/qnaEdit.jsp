@@ -8,9 +8,9 @@
 <title>Q&A 글수정</title>
 <link rel="stylesheet" href="../../resource/css/qnaEdit.css" />
 </head>
-<body style="display: block; margin: 100px 0;">
+<body>
 	<%@ include file="../../header.jsp"%>
-	<main>
+	<main >
 		<!-- 자유게시판 글수정-->
 		<section class="first-section">
 			<div class="section-top-category-name">

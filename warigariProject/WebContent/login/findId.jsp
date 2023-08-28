@@ -8,7 +8,7 @@
 <title>아이디 찾기</title>
 <link rel="stylesheet" href="../resource/css/findId.css" />
 </head>
-<body style="display: block; margin: 100px 0;">
+<body>
 	<%@ include file="../../header.jsp"%>
 	<main class="">
 		<section>

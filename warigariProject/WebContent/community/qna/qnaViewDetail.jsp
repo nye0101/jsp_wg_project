@@ -76,12 +76,12 @@
 			<div class="Icon-OuterContainer">
 				<div class="Icon-InnerContainer">
 					<div class="Icon-Margin">
-						<img class="Icon-Size1" src="../../resource/img/View.png"
+						<img class="Icon-Size1" src="../../resource/img/view.png"
 							alt="조회수" />
 						<div class="Font-Size">112</div>
 					</div>
 					<div class="Icon-Margin">
-						<img class="Icon-Size2" src="../../resource/img/commnet.png"
+						<img class="Icon-Size2" src="../../resource/img/comment.png"
 							alt="댓글수" />
 						<div class="Font-Size Font-Size2">12</div>
 					</div>
