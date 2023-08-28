@@ -7,6 +7,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\팀프로젝트\jsp_wg_project"/>
 			<item value="C:\Users\home\Desktop\jsp_wg_project\warigariProject"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
