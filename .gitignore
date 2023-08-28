@@ -23,6 +23,11 @@ nbactions.xml
 nb-configuration.xml
 .nb-gradle/
 
+# Eclipse
+.classpath
+.project
+.settings/
+
 # Intellij
 .idea/
 *.iml
@@ -40,4 +45,3 @@ pom.xml.versionsBackup
 pom.xml.next
 release.properties
 dependency-reduced-pom.xml
-/.metadata/
